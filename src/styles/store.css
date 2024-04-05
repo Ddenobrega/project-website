@@ -1,0 +1,27 @@
+#featured {
+  mix-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  max-height: auto;
+  display: flex;
+  justify-self: center;
+  background-position: center;
+  flex: 1;
+}
+
+#item1 {
+  background-color: #f1efef;
+  width: 50%;
+  overflow: hidden;
+  padding: 1rem;
+  max-height: auto;
+  border-radius: 8px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#items {
+  padding: 2% 0 0 2%;
+}

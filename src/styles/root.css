@@ -1,0 +1,18 @@
+:root {
+  --secondary: #0d3b66;
+  --secondary-alt: #f95738;
+  --primary-alt: #f4d35e;
+  --primary: #ee964b;
+  --background: #fbf2fb;
+  --foreground: rgb(15, 15, 15);
+  --darken: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.658));
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body * {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}

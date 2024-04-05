@@ -1,0 +1,41 @@
+footer {
+  background-color: var(--secondary);
+  color: var(--background);
+  padding: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--primary-alt);
+}
+
+footer h4 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+}
+
+footer > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+#copyright {
+  display: flex;
+  justify-content: center;
+}
+
+#copyright {
+  padding-top: 3rem;
+}
+
+#date {
+  text-indent: 0.5rem;
+}

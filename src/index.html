@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techshop Inc.</title>
+    <link rel="stylesheet" href="/src/styles/root.css" />
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="stylesheet" href="/src/styles/header.css" />
+    <link rel="stylesheet" href="/src/styles/footer.css" />
+  </head>
+  <body>
+    <script src="/src/scripts/header.js"></script>
+    <section id="intro">
+      <h1>Tech Solutions, Tailored for success.</h1>
+      <button>Learn More</button>
+    </section>
+    <section id="service-container">
+      <h2>Our Services</h2>
+      <div id="card-container">
+        <div class="card">
+          <h3>Innovate Tech Products</h3>
+          <p>
+            Experience the future with our curated selection of cutting-edge
+            tech products. From gadgets to gear, explore our range and elevate
+            your digital lifestyle effortlessly
+          </p>
+          <button>Shop Now</button>
+        </div>
+        <div class="card">
+          <h3>Cutting Edge Repairs</h3>
+          <p>
+            Experience the future with our curated selection of cutting-edge
+            tech products. From gadgets to gear, explore our range and elevate
+            your digital lifestyle effortlessly
+          </p>
+          <button>Contact Us</button>
+        </div>
+      </div>
+    </section>
+    <section id="about-section">
+      <div>
+        <h2>About our Company</h2>
+        <p>
+          Welcome to Techshop Inc., your go-to destination for cutting-edge
+          technology and expert repair services. We offer high-quality tech
+          products and reliable repairs to keep you connected and productive.
+          Our team is dedicated to providing exceptional service and support
+          every step of the way. Join us and experience seamless shopping and
+          dependable repairs for all your tech needs.
+        </p>
+      </div>
+      <img src="/src/assets/img/company.png" alt="Company Image" />
+    </section>
+    <section id="contact-section">
+      <form action="" onsubmit="sendMessage">
+        <h3>Contact Us</h3>
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea
+          name="message"
+          placeholder="Message"
+          id=""
+          cols="30"
+          rows="10"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="contact-links">
+        <ul>
+          <div class="social">
+            <img class="icon" src="/src/assets/img/x.png" alt="" /><a href=""
+              >@Techstore</a
+            >
+          </div>
+          <div class="social">
+            <img class="icon" src="/src/assets/img/fb.png" alt="" />
+            <a href="">techstore</a>
+          </div>
+          <div class="social">
+            <img class="icon" src="/src/assets/img/mail.png" alt="" />
+            <a href="">support@techstoregy.com</a>
+          </div>
+          <div class="social">
+            <img class="icon" src="/src/assets/img/phone.png" alt="" />
+            <a href="">222-2222</a>
+          </div>
+        </ul>
+      </div>
+    </section>
+
+    <script src="/src/scripts/footer.js"></script>
+    <script src="/src/scripts/calculate-date.js"></script>
+    <script src="/src/scripts/send-message.js"></script>
+  </body>
+</html>

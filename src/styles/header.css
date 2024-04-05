@@ -1,0 +1,38 @@
+header {
+  background-color: var(--secondary);
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#logo > h1 {
+  color: var(--primary-alt);
+  font-size: 1.5rem;
+}
+
+#logo > img {
+  aspect-ratio: 1;
+  width: 64px;
+}
+
+#links > a {
+  text-decoration: none;
+  color: var(--background);
+  font-size: 1.15rem;
+}
+
+#links > a:hover {
+  color: var(--primary-alt);
+}
+
+#links {
+  display: flex;
+  gap: 1.5rem;
+}
