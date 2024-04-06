@@ -1,5 +1,10 @@
 var storeEndpoint = "https://fakestoreapi.com";
 
+var dollar = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+});
+
 function getFeatured() {
   console.log(storeEndpoint);
   fetch(`${storeEndpoint}/products/category/electronics?limit=10`, {
@@ -20,7 +25,9 @@ function getFeatured() {
         featuredIndex
       ].image.toString()}')`;
       featuredText.innerText = data[featuredIndex].title;
-      featuredPrice.innerText = `$${data[featuredIndex].price * 218}`;
+      featuredPrice.innerText = `${dollar.format(
+        data[featuredIndex].price * 218
+      )}`;
     });
 }
 
