@@ -1,1 +1,1 @@
-document.getElementById("date").innerText = new Date().getFullYear().toString();
+export default new Date().getFullYear().toString();

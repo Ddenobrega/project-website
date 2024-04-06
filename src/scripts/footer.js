@@ -1,4 +1,5 @@
 const footer = document.createElement("footer");
+import date from "./calculate-date.js";
 
 footer.innerHTML = `
       <div>
@@ -7,7 +8,7 @@ footer.innerHTML = `
           <ul>
             <a href="">Profile</a
             ><a href="">Vacancies</a
-            ><a href="">Privacy Policy</a>
+            ><a href="/src/privacy.html">Privacy Policy</a>
           </ul>
         </div>
         <ul>
@@ -17,12 +18,12 @@ footer.innerHTML = `
         </ul>
         <ul>
           <h4>Legal</h4>
-          <a href="">Partner with Us</a>
-          <a href="">File a complaint</a>
+          <a href="/src/index.html#contact">Partner with Us</a>
+          <a href="/src/index.html#contact">File a complaint</a>
         </ul>
       </div>
       <div id="copyright">
-        <span>Copyright Techstore </span><span id="date"></span>
+        <span>Copyright Techstore </span><span id="date">${date}</span>
       </div>
   `;
 

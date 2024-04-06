@@ -1,17 +1,17 @@
-p,
-span,
-h2,
-li {
+body > section > p,
+body > section > span,
+body > section > h2,
+body > section > li {
   width: 50%;
   line-height: 150%;
   font-family: serif !important;
 }
 
-h2 {
+body > section > h2 {
   font-weight: bold;
 }
 
-li {
+body > section > li {
   list-style-type: disc;
   padding: 0.5rem;
   width: 100%;
