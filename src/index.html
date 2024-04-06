@@ -14,7 +14,11 @@
     <script src="/src/scripts/header.js"></script>
     <section id="intro">
       <h1>Tech Solutions, Tailored for success.</h1>
-      <button>Learn More</button>
+      <button
+        onclick="document.getElementById('service-container').scrollIntoView({behavior: 'smooth'})"
+      >
+        Learn More
+      </button>
     </section>
     <section id="service-container">
       <h2>Our Services</h2>
@@ -26,7 +30,7 @@
             tech products. From gadgets to gear, explore our range and elevate
             your digital lifestyle effortlessly
           </p>
-          <button>Shop Now</button>
+          <button onclick="location.href = '/src/store.html'">Shop Now</button>
         </div>
         <div class="card">
           <h3>Cutting Edge Repairs</h3>
@@ -35,7 +39,11 @@
             tech products. From gadgets to gear, explore our range and elevate
             your digital lifestyle effortlessly
           </p>
-          <button>Contact Us</button>
+          <button
+            onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'})"
+          >
+            Contact Us
+          </button>
         </div>
       </div>
     </section>

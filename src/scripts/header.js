@@ -6,9 +6,9 @@ header.innerHTML = `
         <h1>Techshop Inc.</h1>
       </div>
       <div id="links">
-        <a href="">Home</a>
-        <a href="">Store</a>
-        <a href="">Contact</a>
+        <a href="/src/">Home</a>
+        <a href="/src/store.html">Store</a>
+        <a href="/src/index.html#contact-section">Contact</a>
       </div>
 `;
 document.body.appendChild(header);

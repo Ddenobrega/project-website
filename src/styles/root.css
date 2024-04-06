@@ -15,4 +15,12 @@ body * {
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "slnt" 0;
+  scroll-behavior: smooth;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: all linear 0.1s;
+  opacity: 0.95;
+  transform: scale(1.01);
 }

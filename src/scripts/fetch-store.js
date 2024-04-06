@@ -13,22 +13,29 @@ function getFeatured() {
       "Content-Type": "application/json",
     },
   })
-    .then((response) => response.json())
+    .then((response) => {
+      if (response.status === 200) return response.json();
+      else throw new Error("Cannot Connect to Backend please try again later");
+    })
     .then((data) => {
-      var featuredDiv = document.getElementById("featured");
-      var featuredText = document.getElementById("featured-text");
-      var featuredPrice = document.getElementById("featured-price");
-      const featuredIndex = Math.floor(Math.random() * data.length);
-      console.log(featuredIndex);
-      console.log(data);
-      featuredDiv.style.backgroundImage = `url('${data[
-        featuredIndex
-      ].image.toString()}')`;
-      featuredText.innerText = data[featuredIndex].title;
-      featuredPrice.innerText = `${dollar.format(
-        data[featuredIndex].price * 218
-      )}`;
-    });
+      let itemContainer = document.getElementById("items");
+
+      data.map((item) => {
+        let el = document.createElement("div");
+        let image = document.createElement("img");
+        let title = document.createElement("span");
+        let price = document.createElement("span");
+        title.setAttribute("class", "item-title");
+        image.setAttribute("src", item.image);
+        title.innerText = item.title;
+        price.innerText = dollar.format(item.price * 218);
+        el.appendChild(image);
+        el.appendChild(title);
+        el.appendChild(price);
+        itemContainer.appendChild(el);
+      });
+    })
+    .catch((err) => alert(err));
 }
 
 getFeatured();
